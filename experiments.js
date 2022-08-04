@@ -48,11 +48,12 @@ console.log(friendsAtYourParty);
 
 const mybirthday = 20220823;
 let thedate = 20220804;
+const daysuntil = mybirthday - thedate
     if (thedate < mybirthday) {
-        daysuntil = mybirthday - thedate
         if (daysuntil < 30) {
-        console.log(`There are only ${daysuntil} days until my birthday`);
+        console.log(`There are only ${daysuntil} days until my birthday`);}
+
         else {console.log(`So long to go. There are ${daysuntil} days until my birthday`);
-        } }  
+        }   }
     
-    else console.log('my birthday has passed') }
+    else { console.log('my birthday has passed') } 
