@@ -57,3 +57,11 @@ const daysuntil = mybirthday - thedate
         }   }
     
     else { console.log('my birthday has passed') } 
+
+    //for loops
+    
+let friendsAtYourHouse = 0;
+    for (let i = 0; i <= 10; i++) {
+      friendsAtYourHouse++;
+    }
+    console.log(friendsAtYourHouse);
