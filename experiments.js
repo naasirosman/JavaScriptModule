@@ -30,8 +30,29 @@ if (lightison) {
 
 const weather = 27;
 
-if (weather) >= 30 {
-    console.log(`it is hot today, it is ${weather} degrees today`)
+if (weather >= 30) { //use === to ask if its equal. us !== to ask if its not equal to
+    console.log(`It is hot today. It is ${weather} degrees today`);
+} else if (weather > 15) {
+    console.log(`It is fine today, It is ${weather} degrees today`);
 } else {
-    console.log(`it is fine today, it is only ${weather} degrees today`)
+    console.log(`It is cold today. It is only ${weather} degrees today`);
 }
+
+//loops are const which can be changed
+
+let friendsAtYourParty = 0;
+while (friendsAtYourParty < 10) {
+  friendsAtYourParty = friendsAtYourParty + 1;
+} //i.e. add 1 until it reaches 10
+console.log(friendsAtYourParty);
+
+const mybirthday = 20220823;
+let thedate = 20220804;
+    if (thedate < mybirthday) {
+        daysuntil = mybirthday - thedate
+        if (daysuntil < 30) {
+        console.log(`There are only ${daysuntil} days until my birthday`);
+        else {console.log(`So long to go. There are ${daysuntil} days until my birthday`);
+        } }  
+    
+    else console.log('my birthday has passed') }
