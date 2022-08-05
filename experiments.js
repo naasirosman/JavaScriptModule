@@ -48,11 +48,60 @@ console.log(friendsAtYourParty);
 
 const mybirthday = 20220823;
 let thedate = 20220804;
+const daysuntil = mybirthday - thedate
     if (thedate < mybirthday) {
-        daysuntil = mybirthday - thedate
         if (daysuntil < 30) {
-        console.log(`There are only ${daysuntil} days until my birthday`);
+        console.log(`There are only ${daysuntil} days until my birthday`);}
+
         else {console.log(`So long to go. There are ${daysuntil} days until my birthday`);
-        } }  
+        }   }
     
-    else console.log('my birthday has passed') }
+    else { console.log('my birthday has passed') } 
+
+    //for loops
+    
+let friendsAtYourHouse = 0;
+ for (let i = 0; i <= 10; i++) {
+ friendsAtYourHouse++;
+}
+ console.log(friendsAtYourHouse);
+
+const charachter = 'a';
+    const timestorepeat = 20;
+    let answer = '';
+    
+    for (let k = 0; k < timestorepeat; k++) { //however much this is, in this case 20, it runs the next line 20 times
+        answer += charachter
+    }
+
+
+    //functions
+
+    function addTwo(number) {
+        return number + 2;
+      }
+      
+      const finalAnswer = addTwo(5);
+      console.log(finalAnswer);
+
+//calculate celcius using function
+    const fahrenheit = 70
+
+    function toCelsius(number) {
+        return (number - 32) * 5 / 9;
+    }
+
+    const celcius = toCelsius (fahrenheit);
+    let aroundCelcius = Math.round(celcius);
+    console.log (`${fahrenheit} fahrenheit is around ${aroundCelcius} degrees celcius`);
+
+    //you can also use a function to call upon a specific piece of text
+
+    function laptop() {
+        return "MacBook Pro 2019 M1"
+    }
+    const laptopName = laptop()
+    console.log(laptopName)
+
+    //scope
+
