@@ -55,6 +55,7 @@ const daysuntil = mybirthday - thedate
 
         else {console.log(`So long to go. There are ${daysuntil} days until my birthday`);
         }   }
+<<<<<<< HEAD
     
     else { console.log('my birthday has passed') } 
 
@@ -105,3 +106,7 @@ const charachter = 'a';
 
     //scope
 
+=======
+    
+    else { console.log('my birthday has passed') } 
+>>>>>>> 2cdbafe082a4320bc8c235f5eeb185867cd60d17
