@@ -62,6 +62,7 @@ const daysuntil = mybirthday - thedate
     //for loops
     
 let friendsAtYourHouse = 0;
+<<<<<<< HEAD
  for (let i = 0; i <= 10; i++) {
  friendsAtYourHouse++;
 }
@@ -217,3 +218,9 @@ const charachter = 'a';
 
     //scope
 
+=======
+    for (let i = 0; i <= 10; i++) {
+      friendsAtYourHouse++;
+    }
+    console.log(friendsAtYourHouse);
+>>>>>>> 338b3af0d276185e4db9d5fb593688f2322812b4
