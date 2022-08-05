@@ -38,7 +38,7 @@ if (weather >= 30) { //use === to ask if its equal. us !== to ask if its not equ
    console.log(`It is cold today. It is only ${weather} degrees today`);
 }
  
-//loops are const which can be changed
+//loops are const which can be changed (let)
  
 let friendsAtYourParty = 0;
 while (friendsAtYourParty < 10) {
@@ -46,7 +46,7 @@ while (friendsAtYourParty < 10) {
 } //i.e. add 1 until it reaches 10
 console.log(friendsAtYourParty);
  
-const mybirthday = 20220823;
+const mybirthday = 20220890;
 let thedate = 20220804;
 const daysuntil = mybirthday - thedate
    if (thedate < mybirthday) {
@@ -105,5 +105,40 @@ const charachter = 'a';
  
    //scope
  
- 
+ //constants inside a function cannot be used outside (they are out of scope)
+ function blah(number) {
+    const something = "Cuppa coffee"
+    return number + 5
+    console.log(something);
+ }
+
+  // on this line " console.log(something); " //this will not show because it is out of scope
+console.log(blah(2))
+
+
+
+ let Brian = 'yellow';
+
+ function addfive(number) {
+     Brian = 'red';
+    return number + 5; 
+}
+
+ console.log(Brian);
+
+ const series = 'a';
+   const episodes = 20;
+   let get = '';
+  
+   for (let k = 0; k < timestorepeat; k++) { 
+       answer += charachter
+       const goal = "green"
+   }
+
+   // console.log(goal) // this work as "goal" is inside another loop/scope
+const demo = "UNIindiDNIiiBDIbdbBibBib"
+
+console.log(demo.toLowerCase())
+
+"bla".
 
