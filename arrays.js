@@ -1,3 +1,5 @@
+//arrays
+
 const daysOfTheWeek = [
     "Monday",
     "Tuesday",
@@ -15,4 +17,4 @@ const daysOfTheWeek = [
   console.log(daysOfTheWeek.join("-"))
 
   daysOfTheWeek.push("Oneday");
-  console.log(daysOfTheWeek)
+  console.log(daysOfTheWeek) 
