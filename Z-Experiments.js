@@ -13,12 +13,11 @@ const sentenceWithTemplate = `Hello ${firstName} ${lastName}! How are you!?`;
  
 console.log(sentenceWithTemplate);
  
-//you can put variable inside a string if you use ` `is and ${variable} is used
- 
-const lightison = true;
+//you can put variable inside a string if you use ` ` is and ${variable} is used
  
 //booleans are used in true and false scenarios
- 
+
+const lightison = true;
  
 if (lightison) {
  console.log("The light is on!");
@@ -30,7 +29,7 @@ if (lightison) {
  
 const weather = 27;
  
-if (weather >= 30) { //use === to ask if its equal. us !== to ask if its not equal to
+if (weather >= 30) { //use === to ask if its equal. use !== to ask if its not equal to
    console.log(`It is hot today. It is ${weather} degrees today`);
 } else if (weather > 15) {
    console.log(`It is fine today, It is ${weather} degrees today`);
@@ -70,11 +69,10 @@ const charachter = 'a';
    const timestorepeat = 20;
    let answer = '';
   
-   for (let k = 0; k < timestorepeat; k++) { //however much this is, in this case 20, it runs the next line 20 times
-       answer += charachter
+   for (let k = 0; k < timestorepeat; k++) { // for loops run the line multiple times depending on the condition (timestirepeat)
+      answer = answer + charachter;
    }
- 
- 
+ console.log(answer);
    //functions
  
    function addTwo(number) {
@@ -140,5 +138,73 @@ const demo = "UNIindiDNIiiBDIbdbBibBib"
 
 console.log(demo.toLowerCase())
 
-"bla".
+// use "bla".
 
+
+//objects
+
+ 
+const person = {
+    age: "28",                 //these are objects
+    height: "180cm",
+    location: {
+        city: "London",
+        country: "England", },
+    weight: "86kg",
+}
+
+console.log(person.height)
+console.log(person.location.city)
+console.log(person.age)
+console.log(person.location)
+console.log(person)
+
+//context
+
+const Helen = {
+    age: "37",             
+    height: "160cm",
+    location: {
+        city: "Edinburgh",
+        country: "Scotland",
+        street: "First Street",
+        postcode: "SC12 LAH" },
+    weight: "62kg",
+
+    getAddress () { 
+        return `${this.location.street}, ${this.location.postcode}, ${this.location.city}, ${this.location.country}`
+    } //context is using "this" to refer to its scope
+
+}
+console.log(Helen.getAddress())
+
+
+//arrays
+
+const daysOfTheWeek = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ]
+  console.log(daysOfTheWeek);
+  console.log(daysOfTheWeek[0]);
+  console.log(daysOfTheWeek[1]);
+  console.log(daysOfTheWeek[6]);
+
+  console.log(daysOfTheWeek.join("-"))
+
+  daysOfTheWeek.push("Oneday");
+  console.log(daysOfTheWeek) //why aint this working
+
+let x = 2;
+let y = 5;
+// console.log(x -= y);
+// console.log(x = x - y);
+console.log(x)
+console.log(x += y); // the equals after +/- reassignes x
+console.log(x);
+console.log(x, 'nico')
