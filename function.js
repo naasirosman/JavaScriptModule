@@ -53,12 +53,21 @@ const series = 'a';
 const episodes = 20;
 let get = '';
 
-for (let k = 0; k < timestorepeat; k++) { 
+/* for (let k = 0; k < timestorepeat; k++) { 
     answer += charachter
     const goal = "green"
-}
+} */
 
 // console.log(goal) // this work as "goal" is inside another loop/scope
 const demo = "UNIindiDNIiiBDIbdbBibBib"
 
 console.log(demo.toLowerCase())
+
+//madLibs game
+
+function madLibs(noun, adjective, pastVerb, adverb) {
+    var result = "";
+    result += `The ${adjective} ${noun} ${pastVerb} the mouse ${adverb}`
+    console.log(result)
+}
+madLibs("cat", "black", "ate", "quickly")
