@@ -30,11 +30,11 @@ console.log(laptopName)
 
 //constants inside a function cannot be used outside (they are out of scope)
 function blah(number) {
- const something = "Cuppa coffee"
+ const something = "Cuppa coffee" //this is in the local scope
  return number + 5
  console.log(something);
 }
-
+var tshirtColor = "green" //is in the global scope
 // on this line " console.log(something); " //this will not show because it is out of scope
 console.log(blah(2))
 
@@ -71,3 +71,14 @@ function madLibs(noun, adjective, pastVerb, adverb) {
     console.log(result)
 }
 madLibs("cat", "black", "ate", "quickly")
+madLibs("dog", "green", "ate", "quickly")
+
+console.log(document)
+
+// boolean functions
+
+function isLess(a, b) {
+  return a < b
+}
+
+console.log(isLess(9, 3))
