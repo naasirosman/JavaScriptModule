@@ -40,18 +40,6 @@ console.log(productOrders);
 
 // productOrders.forEach(function(productOrders) //not undertanding for each
 
-const teams = {
-  liverpool: {
-    ucl: ["1994", "1996", "2001", "2005", "2011", "2019"],
-    pl: ["2012", "2016", "2020"],
-  },
-  manU: {
-    ucl: ["1999", "2002"],
-    pl: ["2000", "2004", "2008", "2020"],
-  }
-}
-var ManUFirstUCL = teams.manU.ucl[0] 
-console.log(ManUFirstUCL)
 
 
 //objects
@@ -90,3 +78,25 @@ const Helen = {
 
 }
 console.log(Helen.getAddress())
+
+
+
+const teams = {
+  liverpool: {
+    ucl: ["1994", "1996", "2001", "2005", "2011", "2019"],
+    pl: ["2012", "2016", "2020"],
+  },
+  manU: {
+    ucl: ["1999", "2002"],
+    pl: ["2000", "2004", "2008", "2020"],
+  }
+}
+var ManUFirstUCL = teams.manU.ucl[0] 
+console.log(ManUFirstUCL)
+
+teams.manU.pl.push("2021")
+console.log(teams)
+
+
+var liverpoolLatestUCL = teams.liverpool.ucl[teams.liverpool.ucl.length - 1]
+console.log(liverpoolLatestUCL)
