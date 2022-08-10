@@ -39,3 +39,54 @@ console.log(productOrders);
 //console.log(productOrders.toLowerCase()); // why aint this working
 
 // productOrders.forEach(function(productOrders) //not undertanding for each
+
+const teams = {
+  liverpool: {
+    ucl: ["1994", "1996", "2001", "2005", "2011", "2019"],
+    pl: ["2012", "2016", "2020"],
+  },
+  manU: {
+    ucl: ["1999", "2002"],
+    pl: ["2000", "2004", "2008", "2020"],
+  }
+}
+var ManUFirstUCL = teams.manU.ucl[0] 
+console.log(ManUFirstUCL)
+
+
+//objects
+
+ 
+const person = {
+  age: "28",                 //these are objects
+  height: "180cm",
+  location: {
+      city: "London",
+      country: "England", },
+  weight: "86kg",
+}
+
+console.log(person.height)
+console.log(person.location.city)
+console.log(person.age)
+console.log(person.location)
+console.log(person)
+
+//context
+
+const Helen = {
+  age: "37",             
+  height: "160cm",
+  location: {
+      city: "Edinburgh",
+      country: "Scotland",
+      street: "First Street",
+      postcode: "SC12 LAH" },
+  weight: "62kg",
+
+  getAddress () { 
+      return `${this.location.street}, ${this.location.postcode}, ${this.location.city}, ${this.location.country}`
+  } //context is using "this" to refer to its scope
+
+}
+console.log(Helen.getAddress())
