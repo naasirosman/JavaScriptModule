@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <script src="dom.js"></script>
+    <title>dom</title>
+</head>
+
+<body>
+    <style>
+        .red-square {
+          width: 100px;
+          height: 100px;
+          background-color: crimson;
+        }
+      </style>
+      
+      <div class="red-square"></div>
+      <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+      </ul>
+
+      <button class="event">
+            click me
+      </button>
+      <input placeholder="type into me!" class="input-to-copy" />
+      <p class="p-to-copy-to">Nothing has happened yet.</p>
+      <div class="button-container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+
+      
+<script>
+        const redSquare = document.querySelector('.red-square');
+          redSquare.style.backgroundColor = 'limegreen';
+
+        const elementsToChange = document.querySelectorAll('.js-target');
+          for (let i = 0; i < elementsToChange.length; i++) {
+            const currentElement = elementsToChange[i];
+            currentElement.innerText = "Modified by JavaScript!";
+          }
+
+        const btn = document.querySelector('.event')
+           btn.addEventListener('click', function () {alert("hey there")})
+
+        const input = document.querySelector('.input-to-copy');
+           const paragraph = document.querySelector('.p-to-copy-to');
+
+         input.addEventListener("keyup", function() {
+            paragraph.innerText  = input.value;});
+        
+            document.querySelector('.button-container').addEventListener('click', function(event) {
+              if (event.target.tagName === 'button' ) {
+             alert(`You clicked on button ${event.target.innerText}`)};});
+      </script>
+</body>
+</html>
